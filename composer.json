@@ -1,0 +1,25 @@
+{
+    "name": "jaguarsoft/laravel-composer",
+    "description": "Update composer with zero downtime",
+    "keywords": ["laravel", "composer"],    
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Laurence",
+            "email": "laurence@jaguarsoft.pe"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JaguarSoft\\LaravelComposer\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^5.3.9 || ^7.0 || ^8.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "5.2.x-dev"
+        }
+    }
+}
