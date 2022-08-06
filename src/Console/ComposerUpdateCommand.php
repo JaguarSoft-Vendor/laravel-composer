@@ -40,5 +40,10 @@ class ComposerUpdateCommand extends Command
 
         $this->comment('composer dump-autoload');
         exec('composer dump-autoload');
+
+        $this->comment('composer run post-update-cmd');
+        exec('composer run post-update-cmd');
+
+        $this->info('composer:update process finished successfully');
     }
 }
