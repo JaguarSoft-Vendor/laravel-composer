@@ -38,11 +38,11 @@ class ComposerUpdateCommand extends Command
         exec('mv vendor-new vendor');
         $this->info('vendor overrided successfully');
 
-        $this->comment('composer dump-autoload --quiet');
-        exec('composer dump-autoload');
+        $this->comment('composer dump-autoload');
+        exec('composer dump-autoload  --quiet');
 
-        $this->comment('composer run post-update-cmd --quiet');
-        exec('composer run post-update-cmd');
+        $this->comment('composer run post-update-cmd');
+        exec('composer run post-update-cmd --quiet');
 
         $this->info('composer:update process finished successfully');
     }
